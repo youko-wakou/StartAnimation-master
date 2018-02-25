@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorSky"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/girl_walk_image"
+        android:layout_width="213dp"
+        android:layout_height="312dp"
+
+        android:layout_alignEnd="@+id/adView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="39dp"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <ImageView
+        android:id="@+id/kumoview1"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/kumoview5"
+        android:layout_marginTop="18dp"
+        app:srcCompat="@drawable/cloudy" />
+
+    <ImageView
+        android:id="@+id/kumoview2"
+        android:layout_width="220dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/kumoview1"
+        app:srcCompat="@drawable/cloudy"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="222dp" />
+
+    <ImageView
+        android:id="@+id/kumoview3"
+        android:layout_width="179dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/cloudy"
+        tools:layout_editor_absoluteX="282dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <ImageView
+        android:id="@+id/kumoview4"
+        android:layout_width="153dp"
+        android:layout_height="90dp"
+        android:layout_alignEnd="@+id/kumoview3"
+        android:layout_alignTop="@+id/kumoview5"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/cloudy"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <ImageView
+        android:id="@+id/kumoview5"
+        android:layout_width="245dp"
+        android:layout_height="123dp"
+        android:layout_below="@+id/kumoview3"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/kumoview1"
+        app:srcCompat="@drawable/cloudy"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="351dp" />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    <ImageView
+        android:id="@+id/sun_Image"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/kumoview5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="27dp"
+        ads:srcCompat="@drawable/sum_color" />
+
+    <ImageView
+        android:id="@+id/touch_loveView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/adView"
+        android:layout_alignTop="@+id/kumoview5"
+        android:layout_marginStart="41dp"
+         />
+
+
+</RelativeLayout>
